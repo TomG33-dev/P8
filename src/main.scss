@@ -5,5 +5,7 @@
 
 @use "./sass/home.scss";
 @use "./sass/about.scss";
-@use "./sass/logement.scss";
-@use "./sass/404.scss";
+@use "./sass/card.scss";
+@use "./sass/error.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");

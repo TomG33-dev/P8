@@ -1,0 +1,45 @@
+.home {
+
+    .banner {
+        margin-top: 50px;
+        position: relative;
+    
+        img {
+            width: 100%;
+            height: 233px;
+            object-fit: cover;
+            border-radius: 20px;
+            filter: brightness(40%);
+            z-index: 1;
+            position: relative;
+        }
+    
+        .overlay-text {
+            position: absolute;
+            color: white;
+            font-size: 48px;
+            font-weight: 600;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
+    }
+
+    .gallery {
+        background-color: rgba(246, 246, 246, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 43px;
+        border-radius: 20px;
+    
+        .gallery-card {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin: 56px;
+        }
+    }
+}
