@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+
+    img {
+        width: 10%;
+    }
+
+    nav {
+        
+        ul {
+            display: flex;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #000;
+
+                &.underline {
+                    text-decoration: underline;
+                }
+            }
+
+            li {
+                margin-left: 20px;
+            }
+        }
+    }
+}
