@@ -1,9 +1,10 @@
 import Banner from "../../components/Banner/Banner";
-import CardsLayout from "../../components/Cards/CardsLayout";
+import Thumb from "../../components/Thumb/Thumb";
+
 
 import Paysage from "../../assets/images/paysage.png";
 
-import logement from "../../data/logement.json";
+import logement from "../../data/logement.json"
 
 function Home () {
     return (
@@ -13,9 +14,7 @@ function Home () {
                 <div className="overlay-text">Chez vous, partout et ailleurs</div>
             </Banner>
             <div className="gallery">
-                <div className="gallery-card">
-                    <CardsLayout logement={logement} />
-                </div>
+                <Thumb logement={logement} />
             </div>
         </div>
     )
