@@ -11,14 +11,14 @@ function Logement() {
     const pictures = logement.pictures;
     return (
         <div>
-            <h1>Logement ID : ${id}</h1>
             <p> {logement.title} </p>
+            <div className="pictures">
                 {pictures.map((picture) => {
                     return (
                         <img src={picture} alt={logement.title} key={picture} />
                     )
-                })
-            }
+                })}
+            </div>
         </div>
     );
 }

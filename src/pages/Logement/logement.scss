@@ -1,0 +1,13 @@
+.pictures {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    img {
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+}
