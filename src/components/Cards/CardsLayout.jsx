@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Card = ({logement}) => {
+const CardsLayout = ({logement}) => {
     return (
         logement.map((logement) => (
             <div key={logement.id} className="card">
@@ -11,8 +11,8 @@ const Card = ({logement}) => {
     );
 }
 
-Card.propTypes = {
+CardsLayout.propTypes = {
     logement: PropTypes.array.isRequired
 }
 
-export default Card;
+export default CardsLayout;

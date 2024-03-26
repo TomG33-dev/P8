@@ -1,7 +1,8 @@
-import Header from "./Header"
-import Footer from "./Footer"
-import Home from "./pages/Home"
-import About from "./pages/About"
+import Header from "./Header/Header"
+import Footer from "./Footer/Footer"
+import Home from "../pages/Home/Home"
+import About from "../pages/About/About"
+import Error from "../pages/Error/Error"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
       <Footer />

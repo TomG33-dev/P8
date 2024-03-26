@@ -1,4 +1,4 @@
-import kasalogo from "../assets/images/KasaF.png"
+import kasalogo from "../../assets/images/KasaF.png"
 
 const Footer = () => {
     return (
