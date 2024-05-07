@@ -18,7 +18,7 @@ function Equipments({equipments}) {
         </h2>
     
         {isOpen && (
-            <p className={`equipmentsList ${isOpen ? "is-open" : "is-close"}`}>
+            <p className={`equipmentsText ${isOpen ? "is-open" : "is-close"}`}>
                 {equipments}
             </p>
         )}

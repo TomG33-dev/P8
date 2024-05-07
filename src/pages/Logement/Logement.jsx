@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from "react-router-dom";
 import logements from "../../data/logement.json";
 import Carousel from "../../components/Carousel/Carousel";
@@ -16,13 +16,16 @@ const LogementID = (id) => {
 function Logement() {
     const { id } = useParams();
     const navigate = useNavigate();
-    const logement = LogementID(id);
+    const [logement, setLogement] = useState(null);
 
     useEffect(() => {
-        if (!logement) {
+        const newLogement = LogementID(id);
+        setLogement(newLogement);
+
+        if (!newLogement) {
             navigate("/error");
         }
-    }, [logement, navigate]);
+    }, [id, navigate]);
 
     if (!logement) {
         return null;
@@ -30,7 +33,7 @@ function Logement() {
 
     return (
         <div className="logement">
-            <Carousel images={logement.pictures} />
+            <Carousel key={logement.id} images={logement.pictures} />
             <div className="logement-info">
                 <div className="logement-details">
                     <h2>{logement.title}</h2>

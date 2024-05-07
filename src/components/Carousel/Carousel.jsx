@@ -1,9 +1,7 @@
 import { useState } from "react";
-import logements from "../../data/logement.json";
 
-function Carousel() {
+function Carousel({ images }) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-    const images = logements[0].pictures;
 
     const nextImage = () => {
         const newIndex = currentImageIndex >= images.length - 1 ? 0 : currentImageIndex + 1;
