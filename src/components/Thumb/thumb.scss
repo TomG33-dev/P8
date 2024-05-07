@@ -20,4 +20,9 @@
         bottom: 10px;
         left: 10px;
     }
+
+    @media (max-width: 532px) {
+        width: 90vw; // Réduit la largeur sur les appareils mobiles
+        height: 90vw; // Réduit la hauteur sur les appareils mobiles
+    }
 }

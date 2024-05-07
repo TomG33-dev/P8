@@ -13,7 +13,9 @@ function Home () {
                 <div className="overlay-text">Chez vous, partout et ailleurs</div>
             </Banner>
             <div className="gallery">
+                <div className="gallery-card">
                 <Thumb logement={logement} />
+                </div>
             </div>
         </div>
     )
