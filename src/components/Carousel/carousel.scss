@@ -1,0 +1,32 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+}
+
+.carousel-button-left {
+    position: absolute;
+    left: 150px;
+    font-size: 7rem;
+}
+
+.carousel-button-right {
+    position: absolute;
+    right: 150px;
+    font-size: 7rem;
+}
+
+.carousel-image {
+    width: 1240px;
+    height: 415px;
+    border-radius: 20px;
+}

@@ -7,6 +7,7 @@ import Tags from "../../components/Tags/Tags";
 import Host from "../../components/Host/Host";
 import Description from "../../components/Description/Description";
 import Location from "../../components/Location/Location";
+import Equipments from "../../components/Equipments/Equipments";
 
 const LogementID = (id) => {
     return logements.find((logement) => logement.id === id.toString());
@@ -28,14 +29,23 @@ function Logement() {
     }
 
     return (
-        <div>
+        <div className="logement">
             <Carousel images={logement.pictures} />
-            <h2>{logement.title}</h2>
-            <Stars rating={logement.rating} />
-            <Tags tags={logement.tags} />
-            <Host host={logement.host} />
+            <div className="logement-info">
+                <div className="logement-details">
+                    <h2>{logement.title}</h2>
+                    <Location location={logement.location} />
+                    <Tags tags={logement.tags} />
+                </div>
+                <div className="host-stars">
+                    <Host host={logement.host} />
+                    <Stars rating={logement.rating} />
+                </div>
+            </div>
+            <div className="description-equipments">
             <Description description={logement.description} />
-            <Location location={logement.location} />
+            <Equipments equipments={logement.equipments} />
+            </div>
         </div>
     );
 }

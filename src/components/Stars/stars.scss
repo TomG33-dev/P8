@@ -1,5 +1,13 @@
+.stars {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 40px;
+    gap: 4px;
+}
+
 .red-star {
-    color: red;
+    color: rgba(255, 96, 96, 1);
 }
 
 .grey-star {

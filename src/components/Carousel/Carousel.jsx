@@ -1,5 +1,3 @@
-// useState
-
 import { useState } from "react";
 import logements from "../../data/logement.json";
 
@@ -18,10 +16,10 @@ function Carousel() {
     };
 
     return (
-        <div>
-            <button onClick={prevImage}>Précédent</button>
-            <img src={images[currentImageIndex]} alt="" />
-            <button onClick={nextImage}>Suivant</button>
+        <div className="carousel">
+            <button className="carousel-button carousel-button-left" onClick={prevImage}>&#10094;</button>
+            <img className="carousel-image" src={images[currentImageIndex]} alt="" />
+            <button className="carousel-button carousel-button-right" onClick={nextImage}>&#10095;</button>
         </div>
     );
 }

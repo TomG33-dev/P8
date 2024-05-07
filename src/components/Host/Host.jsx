@@ -1,5 +1,3 @@
-
-
 function Host({ host }) {
     return (
         <div className="host">

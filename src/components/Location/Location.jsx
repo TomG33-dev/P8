@@ -1,5 +1,3 @@
-
-
 function Location({ location }) {
     return (
         <div className="location">

@@ -1,13 +1,36 @@
-.pictures {
+.logement {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    
-    img {
-        width: 1240px;
-        height: 415px;
-        object-fit: cover;
-        border-radius: 20px;
+
+    .logement-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+
+        .logement-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .host-stars {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 15px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: rgba(255, 96, 96, 1);
+            margin-bottom: 0;
+        }
     }
 
+    .description-equipments {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+    }
 }
