@@ -1,7 +1,6 @@
 import Banner from "../../components/Banner/Banner";
 import Thumb from "../../components/Thumb/Thumb";
 
-
 import Paysage from "../../assets/images/paysage.png";
 
 import logement from "../../data/logement.json"

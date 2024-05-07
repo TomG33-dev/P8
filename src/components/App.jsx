@@ -16,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="logement/:id" element={<Logement/>} />
         <Route path="*" element={<Error />} />
+        <Route path="/error" element={<Error />} />
       </Routes>
     </div>
       <Footer />
@@ -24,3 +25,7 @@ function App() {
 }
 
 export default App
+
+// JSDocs
+// useEffect
+// CSS
