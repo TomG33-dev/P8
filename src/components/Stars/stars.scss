@@ -4,6 +4,10 @@
     align-items: center;
     font-size: 40px;
     gap: 4px;
+
+    @media (max-width: 768px) {
+        font-size: 25px;
+    }
 }
 
 .red-star {
