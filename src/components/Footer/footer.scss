@@ -11,5 +11,11 @@
     p {
         color: white;
         font-size: 24px;
+        text-align: center;
+        white-space: pre-wrap;
+
+        @media (max-width: 768px) {
+            white-space: normal;
+        }
     }
 }
