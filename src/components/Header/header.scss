@@ -37,6 +37,7 @@
     }
 
     @media (max-width: 480px) {
+        text-transform: uppercase;
         
         img {
             width: 35%;
@@ -48,7 +49,7 @@
 
                 li {
                     margin-left: 10px;
-                    font-size: 13px;
+                    font-size: 11px;
                 }
             }
         }

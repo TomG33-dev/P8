@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 function Banner({children}) {
 
     return (
-
         <section className='banner'>
             {children}
         </section>
