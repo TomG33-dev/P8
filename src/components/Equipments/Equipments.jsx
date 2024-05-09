@@ -8,7 +8,7 @@ function Equipments({equipments}) {
         setIsOpen(prevIsOpen => !prevIsOpen);
     }, []);
     
-    const equipmentsIcon = `fas fa-chevron-${isOpen ? "up" : "down"}`;
+    const equipmentsIcon = `fas fa-chevron-${isOpen ? "down" : "up"}`;
     
     return (
         <section className={`equipments${isOpen ? " is-open" : " is-close"}`}>
@@ -17,17 +17,17 @@ function Equipments({equipments}) {
             <span className={equipmentsIcon} onClick={updateIsOpen}></span>
         </h2>
     
-        {isOpen && (
-            <p className={`equipmentsText ${isOpen ? "is-open" : "is-close"}`}>
-                {equipments}
-            </p>
-        )}
+        <ul className={`equipmentsText ${isOpen ? "is-open" : "is-close"}`}>
+            {equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+            ))}
+        </ul>
         </section>
     );
 }
 
 Equipments.propTypes = {
-    equipments: PropTypes.array.isRequired,
+    equipments: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default Equipments;

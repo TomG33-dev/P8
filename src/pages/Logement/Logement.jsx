@@ -46,8 +46,12 @@ function Logement() {
                 </div>
             </div>
             <div className="description-equipments">
-            <Description description={logement.description} />
-            <Equipments equipments={logement.equipments} />
+                <div className="collapses-box">
+                    <Description description={logement.description} />
+                </div>
+                <div className="collapses-box">
+                    <Equipments equipments={logement.equipments} />
+                </div>
             </div>
         </div>
     );

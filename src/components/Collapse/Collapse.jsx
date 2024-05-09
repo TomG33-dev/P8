@@ -8,7 +8,7 @@ function Collapse({ title, textArray }) {
         setIsOpen(prevIsOpen => !prevIsOpen);
     }, []);
     
-    const collapseIcon = `fas fa-chevron-${isOpen ? "up" : "down"}`;
+    const collapseIcon = `fas fa-chevron-${isOpen ? "down" : "up"}`;
     
     return (
         <section className={`collapse${isOpen ? " is-open" : " is-close"}`}>

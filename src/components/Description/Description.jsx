@@ -8,7 +8,7 @@ function Description({description}) {
         setIsOpen(prevIsOpen => !prevIsOpen);
     }, []);
     
-    const descriptionIcon = `fas fa-chevron-${isOpen ? "up" : "down"}`;
+    const descriptionIcon = `fas fa-chevron-${isOpen ? "down" : "up"}`;
     
     return (
         <section className={`description${isOpen ? " is-open" : " is-close"}`}>
